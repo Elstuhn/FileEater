@@ -9,8 +9,8 @@ function sleep(ms) {
 
 class Storage {
   constructor(name, description = None) {
-    this.name = name
-    this.description = description
+    this.name = name //name of storage
+    this.description = description //description of storage
     this.raw = {} // key(name): object
   }
   
