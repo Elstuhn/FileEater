@@ -114,7 +114,7 @@ class Storage {
         return 0;
       }
     } catch(err) {
-      console.error(err)
+      console.error(err);
     }
     fs.readFile(`${filename}.fm`, 'utf-8', (err, data) => {
       if (err) {
@@ -122,6 +122,7 @@ class Storage {
       }
 
       const storage = JSON.parse(data.toString());
+      return storage;
     });
   }
 }
